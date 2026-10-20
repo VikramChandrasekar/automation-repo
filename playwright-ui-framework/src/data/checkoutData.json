@@ -1,0 +1,13 @@
+{
+  "targetProducts": [
+    {
+      "name": "Sauce Labs Backpack",
+      "expectedPrice": "$29.99"
+    },
+    {
+      "name": "Sauce Labs Bike Light",
+      "expectedPrice": "$9.99"
+    }
+  ],
+  "taxRate": 0.08
+}

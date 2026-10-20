@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Enterprise Selenium Regression Suite" parallel="tests" thread-count="2">
+    <test name="Chrome UI Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qa.tests.LoginTests"/>
+        </classes>
+    </test>
+</suite>

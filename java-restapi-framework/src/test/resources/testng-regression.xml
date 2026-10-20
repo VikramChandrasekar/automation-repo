@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Enterprise API Regression Suite" parallel="classes" thread-count="4">
+    <test name="User Microservice API Tests">
+        <classes>
+            <class name="com.qa.tests.UserE2ETests"/>
+            <class name="com.qa.tests.UserNegativeTests"/>
+        </classes>
+    </test>
+</suite>

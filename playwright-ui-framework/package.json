@@ -1,0 +1,27 @@
+{
+  "name": "enterprise-playwright-ui-framework",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright TypeScript UI Automation Framework with Fluent POM and AI-Augmented QA Workflows",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:regression": "npx playwright test --grep @regression",
+    "test:headed": "npx playwright test --headed",
+    "test:shard1": "npx playwright test --shard=1/2",
+    "test:shard2": "npx playwright test --shard=2/2",
+    "report": "npx playwright show-report",
+    "ai:generate": "ts-node src/ai-agents/claudeTestGenerator.ts"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
